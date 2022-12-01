@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+* {
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  background-color: rgba(255, 25, 25, 0.2);
+}
+
+body {
+  width: 1200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  background-color: white;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+main {
+  padding: 0 20px 20px 20px;
+}
+
+header {
+  top: 0px;
+  width: 1200px;
+  block-size: 80px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  color: rgba(255, 25, 25, 1);
+  background-image: linear-gradient(45deg, #564a4d, #ece7e8);
+  opacity: 0.8;
+  border-bottom: #cccccc solid 1px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  border-left: rgba(255, 25, 25, 1) double 2px;
+  padding: 10px 10px;
+  margin: 60px 0 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h3::after {
+  content: "☆";
+}
+
+h3::before {
+  content: "☆";
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  box-shadow: 10px 10px;
+  border: black 1px solid;
+  text-align: center;
+  inline-size: 800px;
+  margin: 30px auto;
+}
+
+.header-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.tytle {
+  text-align: center;
+  text-shadow: black 1px 1px 2px;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 80px;
+  background-color: black;
+  font-size: 11px;
+}
+
+.return img {
+  width: 100%;
+  height: 80%;
+}
+
+.return a {
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.dokode {
+  position: relative;
+}
+
+.konbini {
+  position: absolute;
+  top: 30px;
+  left: 600px;
+}
+
+.history blockquote {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.rare-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-indent: 1em;
+}
+
+.rare {
+  border: 1px double #f5f5f5;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+
+.rare-images {
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.rare-headline {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.rare-text {
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.panda {
+  flex: 1 1 300px;
+}
+
+.ranou {
+  flex: 1 1 300px;
+}
+
+.sujiko {
+  flex: 1 1 300px;
+}
+
+.mititonosogu dl {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.alien {
+  padding: 10px;
+  margin: 20px;
+  border: gold 5px ridge;
+}
+
+table,
+tr,
+th,
+td {
+  border: solid black 1px;
+  border-collapse: collapse;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+}
+
+form * {
+  font-size: 20px;
+}
+
+.float-test-img {
+  margin-right: 100px;
+  width: 600px;
+  height: auto;
+  float: left;
+}
+
+.float-test-img img {
+  width: 100%;
+  height: auto;
+}
+
+.float-test-text {
+  margin-top: 200px;
+}
+
+.sales-point {
+  clear: left;
+}
+
+.position-test {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100px;
+  background-color: gold;
+}
+
+.position-test p {
+  font-size: 30px;
+}
+
+.flex-res-wrapper {
+  display: flex;
+}
+
+.flex-res-item {
+  height: 400px;
+  margin: 0 10px;
+}
+
+.red {
+  flex: 1 1 200px;
+  background-color: red;
+}
+
+.yellow {
+  flex: 2 2 100px;
+  background-color: yellow;
+}
+
+.blue {
+  flex: 8 8 10px;
+  background-color: blue;
+}
+
+.orikaesi {
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
